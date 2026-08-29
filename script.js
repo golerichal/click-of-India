@@ -313,7 +313,7 @@ function showKeralaSeason(season) {
             <div class="destination-cards">
 
                 <div class="destination-card">
-                    <img src="images/Munnar.jpg" alt="Munnar">
+                    <img src="images/munnar.jpg" alt="Munnar">
                     <h3>Munnar</h3>
                     <p>
                         Explore beautiful tea plantations, misty hills
