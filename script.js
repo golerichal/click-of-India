@@ -397,7 +397,7 @@ function showKeralaSeason(season) {
             <div class="destination-cards">
 
                 <div class="destination-card">
-                    <img src="images/Kochi.jpg" alt="Kochi">
+                    <img src="images/kochi.jpg" alt="Kochi">
                     <h3>Kochi</h3>
                     <p>
                         Explore historic Fort Kochi, cultural landmarks
