@@ -1,0 +1,292 @@
+// ========================================
+// INTRO SCREEN
+// ========================================
+
+const introScreen = document.querySelector(".intro-screen");
+
+if (introScreen) {
+
+    setTimeout(function () {
+
+        introScreen.style.opacity = "0";
+
+        setTimeout(function () {
+            introScreen.style.display = "none";
+        }, 1000);
+
+    }, 5000);
+}
+
+
+// ========================================
+// MAHARASHTRA - SEASON SELECTION
+// ========================================
+
+function showSeason(season) {
+
+    const content = document.getElementById("season-content");
+
+    if (season === "summer") {
+
+        content.innerHTML = `
+            <h2>☀️ Maharashtra in Summer</h2>
+
+            <p class="season-intro">
+                Escape the summer heat with Maharashtra's beautiful hill stations.
+            </p>
+
+            <div class="destination-cards">
+
+                <div class="destination-card">
+                    <img src="images/mahabaleshwar.jpg" alt="Mahabaleshwar">
+                    <h3>Mahabaleshwar</h3>
+                    <p>
+                        Enjoy cool mountain views, beautiful valleys,
+                        viewpoints and the famous strawberries.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/panchgani.jpg" alt="Panchgani">
+                    <h3>Panchgani</h3>
+                    <p>
+                        Relax among green hills, scenic viewpoints
+                        and peaceful mountain landscapes.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Matheran.jpg" alt="Matheran">
+                    <h3>Matheran</h3>
+                    <p>
+                        Explore a peaceful hill station surrounded by
+                        forests, viewpoints and fresh mountain air.
+                    </p>
+                </div>
+
+            </div>
+        `;
+
+    } else if (season === "monsoon") {
+
+        content.innerHTML = `
+            <h2>🌧️ Maharashtra in Monsoon</h2>
+
+            <p class="season-intro">
+                Experience Maharashtra's green hills, waterfalls
+                and refreshing monsoon beauty.
+            </p>
+
+            <div class="destination-cards">
+
+                <div class="destination-card">
+                    <img src="images/Lonavala.jpg" alt="Lonavala">
+                    <h3>Lonavala</h3>
+                    <p>
+                        Enjoy misty mountains, waterfalls, lush green
+                        valleys and refreshing monsoon views.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Bhimashankar.jpg" alt="Bhimashankar">
+                    <h3>Bhimashankar</h3>
+                    <p>
+                        Explore beautiful forests, waterfalls and
+                        peaceful natural surroundings during the monsoon.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Malshejghat.jpg" alt="Malshej Ghat">
+                    <h3>Malshej Ghat</h3>
+                    <p>
+                        Discover misty mountains, waterfalls and
+                        spectacular green landscapes during the rainy season.
+                    </p>
+                </div>
+
+            </div>
+        `;
+
+    } else if (season === "winter") {
+
+        content.innerHTML = `
+            <h2>❄️ Maharashtra in Winter</h2>
+
+            <p class="season-intro">
+                Enjoy pleasant weather and discover Maharashtra's
+                historic, scenic and wildlife destinations.
+            </p>
+
+            <div class="destination-cards">
+
+                <div class="destination-card">
+                    <img src="images/Pune.jpg" alt="Pune">
+                    <h3>Pune</h3>
+                    <p>
+                        Explore historic landmarks, vibrant culture
+                        and pleasant winter weather in the city of Pune.
+                    </p>
+                </div>
+
+                                <div class="destination-card">
+                    <img src="images/Nashik.jpg" alt="Nashik">
+                    <h3>Nashik</h3>
+                    <p>
+                        Discover beautiful vineyards, scenic surroundings
+                        and peaceful winter experiences.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Tadoba.jpg" alt="Tadoba">
+                    <h3>Tadoba</h3>
+                    <p>
+                        Experience Maharashtra's wildlife, forests and
+                        exciting safari adventures during winter.
+                    </p>
+                </div>
+
+            </div>
+        `;
+
+    }
+}
+
+
+// ========================================
+// RAJASTHAN - SEASON SELECTION
+// ========================================
+
+function showRajasthanSeason(season) {
+
+    const content =
+        document.getElementById("rajasthan-season-content");
+
+    if (season === "summer") {
+
+        content.innerHTML = `
+            <h2>☀️ Rajasthan in Summer</h2>
+
+            <p class="season-intro">
+                Escape the heat and discover Rajasthan's beautiful
+                hill stations, forts and royal landscapes.
+            </p>
+
+            <div class="destination-cards">
+
+                <div class="destination-card">
+                    <img src="images/Mountabu.jpg" alt="Mount Abu">
+                    <h3>Mount Abu</h3>
+                    <p>
+                        Enjoy cooler weather, beautiful lakes,
+                        scenic viewpoints and peaceful mountain landscapes.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/kumbhalgarh.jpg" alt="Kumbhalgarh">
+                    <h3>Kumbhalgarh</h3>
+                    <p>
+                        Explore the magnificent Kumbhalgarh Fort,
+                        historic architecture and the surrounding Aravalli hills.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/ranakpur.jpg" alt="Ranakpur">
+                    <h3>Ranakpur</h3>
+                    <p>
+                        Discover the beautiful Ranakpur Jain Temple,
+                        peaceful surroundings and scenic Aravalli hills.
+                    </p>
+                </div>
+
+            </div>
+        `;
+
+    } else if (season === "monsoon") {
+
+        content.innerHTML = `
+            <h2>🌧️ Rajasthan in Monsoon</h2>
+
+            <p class="season-intro">
+                Experience Rajasthan's greener and refreshing side.
+            </p>
+
+            <div class="destination-cards">
+
+                <div class="destination-card">
+                    <img src="images/udaipur.jpg" alt="Udaipur">
+                    <h3>Udaipur</h3>
+                    <p>
+                        Enjoy beautiful lakes, green surroundings
+                        and the romantic atmosphere of Udaipur.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/bundi.jpg" alt="Bundi">
+                    <h3>Bundi</h3>
+                    <p>
+                        Discover historic forts, palaces and beautiful
+                        green landscapes during the monsoon.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Jhalawar.jpg" alt="Jhalawar">
+                    <h3>Jhalawar</h3>
+                    <p>
+                        Explore greener landscapes, waterfalls and
+                        peaceful natural surroundings.
+                    </p>
+                </div>
+
+            </div>
+        `;
+
+    } else if (season === "winter") {
+
+        content.innerHTML = `
+            <h2>❄️ Rajasthan in Winter</h2>
+
+            <p class="season-intro">
+                Explore Rajasthan's forts, deserts, palaces and
+                colorful culture in pleasant winter weather.
+            </p>
+
+            <div class="destination-cards">
+
+                <div class="destination-card">
+                    <img src="images/Jaisalmer.jpg" alt="Jaisalmer">
+                    <h3>Jaisalmer</h3>
+                    <p>
+                        Experience the golden Thar Desert, magnificent
+                        forts, sand dunes and exciting desert adventures.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Jaipur.jpg" alt="Jaipur">
+                    <h3>Jaipur</h3>
+                    <p>
+                        Explore magnificent forts, royal palaces
+                        and the famous Pink City.
+                    </p>
+                </div>
+
+                <div class="destination-card">
+                    <img src="images/Jodhpur.jpg" alt="Jodhpur">
+                    <h3>Jodhpur</h3>
+                    <p>
+                        Discover the magnificent Mehrangarh Fort
+                        and the beautiful Blue City.
+                    </p>
+                </div>
+
+            </div>
+        `;
+    }
+}

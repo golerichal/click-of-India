@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maharashtra - Click of India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<nav>
+
+    <div class="logo">
+        CLICK OF INDIA
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#states">States</a>
+    </div>
+
+     <div class="nav-icons">
+        <button id="music-toggle">🎵</button>
+    </div>
+
+</nav>
+
+<section class="state-hero">
+
+    <h1>Explore Maharashtra</h1>
+
+    <p>
+        Discover the forts, culture, food and beautiful landscapes
+        of Maharashtra.
+    </p>
+
+</section>
+
+
+<section class="seasons">
+
+    <h2>Explore Maharashtra by Season</h2>
+
+    <p>Choose a season to discover the best places to visit.</p>
+
+    <div class="season-buttons">
+
+        <div class="season-card" onclick="showSeason('summer')">
+            <span>☀️</span>
+            <h3>Summer</h3>
+            <p>Discover cool hill stations and refreshing escapes.</p>
+        </div>
+
+        <div class="season-card" onclick="showSeason('monsoon')">
+            <span>🌧️</span>
+            <h3>Monsoon</h3>
+            <p>Experience Maharashtra covered in lush green beauty.</p>
+        </div>
+
+        <div class="season-card" onclick="showSeason('winter')">
+            <span>❄️</span>
+            <h3>Winter</h3>
+            <p>Enjoy pleasant weather and beautiful destinations.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="season-content">
+
+    <h2>Choose a season to explore Maharashtra</h2>
+
+    <p>Click on a season above to discover beautiful destinations.</p>
+
+</section>
+<script src="script.js"></script>
+
+<!-- ========================================
+     MAHARASHTRA CULTURE
+     ======================================== -->
+
+<section class="state-explore-section" id="culture">
+
+    <h2>🎭 Maharashtra Culture</h2>
+
+    <p class="state-section-intro">
+        Experience the traditions, festivals and art that make Maharashtra unique.
+    </p>
+
+    <div class="state-explore-cards">
+
+        <div class="state-explore-card">
+            <img src="images/Maharashtra_Ganpati.jpg" alt="Ganesh Chaturthi in Maharashtra">
+
+            <h3>Ganesh Chaturthi</h3>
+
+            <p>
+                One of Maharashtra's most celebrated festivals,
+                filled with devotion, music, decorations and community celebrations.
+            </p>
+
+        </div>
+
+        <div class="state-explore-card">
+            <img src="images/Maharashtra_Lavani.jpg" alt="Lavani dance">
+
+            <h3>Lavani Dance</h3>
+
+            <p>
+                A vibrant traditional folk dance of Maharashtra,
+                known for expressive movements, rhythm and colourful costumes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     MAHARASHTRA FOOD
+     ======================================== -->
+
+<section class="state-explore-section" id="food">
+
+    <h2>🍛 Famous Maharashtra Food</h2>
+
+    <p class="state-section-intro">
+        Discover some of the delicious flavours Maharashtra is famous for.
+    </p>
+
+    <div class="state-explore-cards">
+
+        <div class="state-explore-card">
+            <img src="images/Maharashtra_VadaPav.jpg" alt="Vada Pav">
+
+            <h3>Vada Pav</h3>
+
+            <p>
+                A popular Mumbai street food made with a spicy potato
+                fritter served inside a soft pav with chutneys.
+            </p>
+
+        </div>
+
+        <div class="state-explore-card">
+            <img src="images/Maharashtra_Misal.jpg" alt="Misal Pav">
+
+            <h3>Misal Pav</h3>
+
+            <p>
+                A spicy Maharashtrian dish made with sprouted beans,
+                spicy gravy, farsan and pav.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     MAHARASHTRA DESTINATIONS
+     ======================================== -->
+
+<section class="state-explore-section" id="destinations">
+
+    <h2>📍 Famous Maharashtra Destinations</h2>
+
+    <p class="state-section-intro">
+        Explore historic landmarks and iconic places across Maharashtra.
+    </p>
+
+    <div class="state-explore-cards">
+
+        <div class="state-explore-card">
+            <img src="images/Maharashtra_Gateway.jpg" alt="Gateway of India">
+
+            <h3>Gateway of India</h3>
+
+            <p>
+                An iconic landmark of Mumbai overlooking the Arabian Sea
+                and one of Maharashtra's most famous attractions.
+            </p>
+        </div>
+
+        <div class="state-explore-card">
+            <img src="images/Maharashtra_Raigad.jpg" alt="Raigad Fort">
+
+            <h3>Raigad Fort</h3>
+
+            <p>
+                A historic hill fort with great significance in
+                Maharashtra's history and heritage.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+      
+<audio id="background-music" loop>
+    <source src="music/india.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1027 @@
+body {
+    background-color: #f8fafc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+    margin: 0 12px;
+}
+.nav-links a:hover {
+    color: #d97706;
+}
+.nav-icons button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.hero {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 56px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #e67e22;
+    color: white;
+}
+.explore-btn:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111;
+    z-index: 1000;
+    transition: opacity 1s ease;
+}
+.intro-screen p {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+     animation: textReveal 2s ease forwards;
+}
+.india-map {
+    color: #e67e22;
+    font-size: 60px;
+    font-weight: bold;
+}
+.india-map img {
+    width: 280px;
+    height: auto;
+}
+.india-map img {
+    width: 280px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #e67e22)
+            drop-shadow(0 0 25px #e67e22);
+    animation: mapGlow 3s ease-in-out infinite;
+}
+@keyframes mapGlow {
+    0% {
+        filter: drop-shadow(0 0 5px #e67e22)
+                drop-shadow(0 0 15px #e67e22);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 15px #e67e22)
+                drop-shadow(0 0 40px #e67e22);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px #e67e22)
+                drop-shadow(0 0 15px #e67e22);
+    }
+}
+@keyframes textReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.explore-cards {
+    display: flex;
+    gap: 25px;
+}
+.explore-card {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.explore {
+    margin-top: 30px;
+}
+
+.explore h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+
+.explore-card h3 {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    color: black;
+}
+
+
+.explore-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.explore-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.explore-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.state-cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.state-card {
+    width: 300px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.state-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.state-card h3 {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+}
+
+.state-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.state-card img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.state-cards img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.state-cards {
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.state-cards h3 {
+    margin-top: 20px;
+}
+
+.state-cards p {
+    margin-top: 10px;
+}
+
+.state-cards {
+    text-decoration: none;
+    color: inherit;
+}
+
+.state-hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.state-hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.state-hero p {
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* =========================
+   STATES SECTION
+   ========================= */
+
+#states {
+    text-align: center;
+    background: #fff8ed;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+#states h2 {
+    color: #c65d00;
+}
+
+#states > p {
+    color: #5f4b3a;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   STATES GALLERY
+   ========================= */
+
+.state-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   STATE CARD
+   ========================= */
+
+.state-card {
+    background: #fffaf2;
+    border: 1px solid #f0d7b5;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #111;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+
+/* State Image */
+
+.state-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* State Name */
+
+.state-card h3 {
+    font-size: 24px;
+    margin: 15px 20px 20px;
+    color: #c65d00;
+}
+
+
+/* Hover Effect */
+
+.state-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(198, 93, 0, 0.15);
+}
+
+/* Season Section */
+.seasons {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.seasons h2 {
+    font-size: 36px;
+    color: #c65d00;
+    margin-bottom: 10px;
+}
+
+.seasons > p {
+    color: #5f4b3a;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* Season Cards */
+.season-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.season-card {
+    width: 260px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #f0d7b5;
+    box-shadow: 0 6px 18px rgba(198, 93, 0, 0.12);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.season-card span {
+    font-size: 45px;
+}
+
+.season-card h3 {
+    font-size: 26px;
+    color: #c65d00;
+    margin: 15px 0 10px;
+}
+
+.season-card p {
+    color: #6b5a4a;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.season-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(198, 93, 0, 0.22);
+}
+
+/* Summer Destination Cards */
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(198, 93, 0, 0.20);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.destination-card h3 {
+    font-size: 23px;
+    color: #c65d00;
+    margin: 18px 20px 10px;
+}
+
+.destination-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 20px 20px;
+}
+
+.season-intro {
+    text-align: center;
+    color: #5f4b3a;
+}
+/* ========================================
+   HOMEPAGE - PROFESSIONAL UPGRADE
+   ======================================== */
+
+/* Overall page */
+body {
+    margin: 0;
+    background: #f8fafc;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #c65d00;
+    letter-spacing: 1px;
+}
+
+
+/* Hero */
+.hero {
+    min-height: 70vh;
+    background:
+        linear-gradient(
+            rgba(255, 248, 237, 0.85),
+            rgba(248, 250, 252, 0.95)
+        );
+}
+
+.hero-content h1 {
+    color: #b45309;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    max-width: 700px;
+    color: #5f4b3a;
+    line-height: 1.7;
+}
+
+
+/* Explore Section */
+.explore {
+    padding: 70px 30px;
+    margin-top: 0;
+}
+
+.explore h2 {
+    color: #b45309;
+    margin-bottom: 10px;
+}
+
+.explore-cards {
+    max-width: 1250px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.explore-card {
+    padding: 0 0 22px 0;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f0d7b5;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    transition: transform 0.4s ease;
+}
+
+.explore-card h3 {
+    color: #c65d00;
+    margin: 20px 20px 8px;
+}
+
+.explore-card p {
+    margin: 0 20px;
+    color: #6b7280;
+}
+
+.explore-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(198, 93, 0, 0.16);
+}
+
+.explore-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* States section */
+#states {
+    padding: 80px 20px;
+}
+
+#states h2 {
+    font-size: 38px;
+}
+
+.state-gallery {
+    max-width: 1100px;
+    gap: 30px;
+}
+
+.state-card img {
+    height: 270px;
+    transition: transform 0.4s ease;
+}
+
+.state-card:hover img {
+    transform: scale(1.04);
+}
+
+.state-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ========================================
+   RESPONSIVE HOMEPAGE
+   ======================================== */
+
+@media (max-width: 1000px) {
+
+    .explore-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    nav {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .explore {
+        padding: 50px 15px;
+    }
+
+    .explore-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .state-gallery {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+}
+/* ========================================
+   HOMEPAGE - SEASONS SECTION
+   ======================================== */
+
+.home-seasons {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #fff8ed,
+        #fffdf8
+    );
+}
+
+.home-seasons h2 {
+    font-size: 38px;
+    color: #b45309;
+    margin-bottom: 10px;
+}
+
+.home-season-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #6b5a4a;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.home-season-cards {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.home-season-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    border: 1px solid #f0d7b5;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.season-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.home-season-card h3 {
+    font-size: 27px;
+    color: #c65d00;
+    margin-bottom: 12px;
+}
+
+.home-season-card p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.home-season-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(198, 93, 0, 0.16);
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .home-season-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-seasons h2 {
+        font-size: 32px;
+    }
+
+}
+/* ========================================
+   HOMEPAGE - SEASONS SECTION
+   ======================================== */
+
+.home-seasons {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #fff8ed,
+        #fffdf8
+    );
+}
+
+.home-seasons h2 {
+    font-size: 38px;
+    color: #b45309;
+    margin-bottom: 10px;
+}
+
+.home-season-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #6b5a4a;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.home-season-cards {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.home-season-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    border: 1px solid #f0d7b5;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.season-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.home-season-card h3 {
+    font-size: 27px;
+    color: #c65d00;
+    margin-bottom: 12px;
+}
+
+.home-season-card p {
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.home-season-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(198, 93, 0, 0.16);
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .home-season-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-seasons h2 {
+        font-size: 32px;
+    }
+
+}
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer h2 {
+    color: #f59e0b;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f59e0b;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #9ca3af;
+}
+/* ========================================
+   DARK MODE
+   ======================================== */
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode nav {
+    background: #1f2937;
+}
+
+body.dark-mode .nav-links a {
+    color: #f9fafb;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1f2937
+    );
+}
+
+body.dark-mode .hero-content h1 {
+    color: #f59e0b;
+}
+
+body.dark-mode .hero-content p {
+    color: #d1d5db;
+}
+
+body.dark-mode .explore {
+    background: #111827;
+}
+
+body.dark-mode .explore-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .explore-card h3 {
+    color: #f59e0b;
+}
+
+body.dark-mode .explore-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode #states {
+    background: #17202b;
+}
+
+body.dark-mode #states > p {
+    color: #d1d5db;
+}
+
+body.dark-mode .state-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .home-seasons {
+    background: #17202b;
+}
+
+body.dark-mode .home-season-intro {
+    color: #d1d5db;
+}
+
+body.dark-mode .home-season-card {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+body.dark-mode .home-season-card p {
+    color: #d1d5db;
+}
+
+body.dark-mode .about-section {
+    background: #111827;
+}
+
+body.dark-mode .about-content p {
+    color: #d1d5db;
+}
+/* ========================================
+   STATE EXPLORE SECTIONS
+   ======================================== */
+
+.state-explore-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff8ed;
+    margin-top: 40px;
+}
+
+.state-explore-section h2 {
+    font-size: 36px;
+    color: #c65d00;
+    margin-bottom: 10px;
+}
+
+.state-section-intro {
+    color: #5f4b3a;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.state-explore-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.state-explore-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.state-explore-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(198, 93, 0, 0.20);
+}
+
+.state-explore-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.state-explore-card h3 {
+    font-size: 24px;
+    color: #c65d00;
+    margin: 18px 20px 10px;
+}
+
+.state-explore-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0 25px 25px;
+}
+/* ===== State Selection Cards ===== */
+
+.culture-state-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.culture-state-card {
+    display: block;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.culture-state-card:hover {
+    transform: translateY(-6px);
+}
+
+.culture-state-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.culture-state-card h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #c65d00;
+    padding: 20px;
+    margin: 0;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Goa - Click of India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+
+    <div class="logo">
+        CLICK OF INDIA
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#states">States</a>
+    </div>
+
+</nav>
+
+
+<!-- Goa Hero Section -->
+<section class="state-hero">
+
+    <h1>Explore Goa</h1>
+
+    <p>
+        Discover Goa's beautiful beaches, waterfalls,
+        heritage, greenery and vibrant coastal culture.
+    </p>
+
+</section>
+
+
+<!-- Season Selection -->
+<section class="seasons">
+
+    <h2>Explore Goa by Season</h2>
+
+    <p>
+        Choose a season to discover the best places to visit.
+    </p>
+
+    <div class="season-buttons">
+
+        <!-- Summer -->
+        <div class="season-card"
+             onclick="showGoaSeason('summer')">
+
+            <span>☀️</span>
+
+            <h3>Summer</h3>
+
+            <p>
+                Enjoy sunny beaches, waterfalls and
+                beautiful coastal landscapes.
+            </p>
+
+        </div>
+
+
+        <!-- Monsoon -->
+        <div class="season-card"
+             onclick="showGoaSeason('monsoon')">
+
+            <span>🌧️</span>
+
+            <h3>Monsoon</h3>
+
+            <p>
+                Experience Goa's lush greenery,
+                waterfalls and peaceful natural beauty.
+            </p>
+
+        </div>
+
+
+        <!-- Winter -->
+        <div class="season-card"
+             onclick="showGoaSeason('winter')">
+
+            <span>❄️</span>
+
+            <h3>Winter</h3>
+
+            <p>
+                Explore Goa's beaches, heritage
+                and pleasant winter atmosphere.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Season Destination Content -->
+<section id="goa-season-content">
+
+    <h2>Choose a season to explore Goa</h2>
+
+    <p>
+        Click on a season above to discover beautiful destinations.
+    </p>
+
+</section>
+<!-- ========================================
+     GOA CULTURE
+     ======================================== -->
+
+<section class="state-explore-section" id="culture">
+
+    <h2>🎭 Goa Culture</h2>
+
+    <p class="state-section-intro">
+        Discover Goa's unique blend of coastal traditions,
+        music, festivals and Portuguese heritage.
+    </p>
+
+    <div class="state-explore-cards">
+
+        <div class="state-explore-card">
+            <img src="images/Goa carnival.png" alt="Goa Carnival">
+
+            <h3>Goa Carnival</h3>
+
+            <p>
+                A colourful celebration filled with music,
+                dance, costumes and joyful parades.
+            </p>
+        </div>
+
+        <div class="state-explore-card">
+            <img src="images/Goa Culture.jpg" alt="Goan traditional culture">
+
+            <h3>Goan Traditional Culture</h3>
+
+            <p>
+                Goa's culture reflects its coastal traditions,
+                local art, music and Portuguese heritage.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     GOA FOOD
+     ======================================== -->
+
+<section class="state-explore-section" id="food">
+
+    <h2>🍛 Famous Goa Food</h2>
+
+    <p class="state-section-intro">
+        Taste the delicious flavours of Goa's coastal cuisine.
+    </p>
+
+    <div class="state-explore-cards">
+
+        <div class="state-explore-card">
+            <img src="images/Goa Fish.avif" alt="Goan Fish Curry">
+
+            <h3>Goan Fish Curry</h3>
+
+            <p>
+                A famous Goan dish prepared with fish,
+                coconut and aromatic spices.
+            </p>
+        </div>
+
+        <div class="state-explore-card">
+            <img src="images/Goa bebinca.jpg" alt="Bebinca">
+
+            <h3>Bebinca</h3>
+
+            <p>
+                A traditional layered Goan dessert
+                made with coconut milk and rich flavours.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     GOA DESTINATIONS
+     ======================================== -->
+
+<section class="state-explore-section" id="destinations">
+
+    <h2>📍 Famous Goa Destinations</h2>
+
+    <p class="state-section-intro">
+        Explore Goa's famous beaches, waterfalls and historic landmarks.
+    </p>
+
+    <div class="state-explore-cards">
+
+        <div class="state-explore-card">
+            <img src="images/Goa baga.jpg" alt="Baga Beach">
+
+            <h3>Baga Beach</h3>
+
+            <p>
+                A popular beach known for its beautiful coastline,
+                relaxing atmosphere and lively surroundings.
+            </p>
+        </div>
+
+        <div class="state-explore-card">
+            <img src="images/Goa palolem.jpg" alt="Palolem beach">
+
+            <h3>Palolem beach</h3>
+
+            <p>
+                Enjoy vibrant evening parties at Palolem Beach, with music, beautiful sunsets,
+                 and a lively coastal atmosphere. 
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<audio id="background-music" src="india.mp3" loop></audio>
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+<audio id="background-music" loop>
+    <source src="music/india.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+
+</html>
